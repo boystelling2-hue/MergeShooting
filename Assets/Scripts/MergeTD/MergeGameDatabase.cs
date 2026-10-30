@@ -135,6 +135,17 @@ namespace MergeTD
             return units[unitId];
         }
 
+        public List<UnitDefinition> GetAllUnits()
+        {
+            EnsureLoaded();
+            var result = new List<UnitDefinition>(units.Values);
+            result.Sort((a, b) => String.CompareOrdinal(a.unitId, b.unitId));
+            return result;
+        }
+
+        public List<RecipeDefinition> GetAllCraftRecipes()
+        { EnsureLoaded(); return new List<RecipeDefinition>(recipes.Values); }
+
         // Lookup only. Does not spend inventory items or unlock discoveries.
         [Obsolete("Use TryResolveCraftMerge for permanent crafting; battle star merging is separate.")]
         public bool TryResolveMerge(string firstId, string secondId, out UnitDefinition result)

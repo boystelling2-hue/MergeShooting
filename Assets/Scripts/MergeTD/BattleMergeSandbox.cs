@@ -31,7 +31,7 @@ namespace MergeTD
         private bool createdEventSystem;
         private GameObject eventSystemObject;
 
-        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.AfterSceneLoad)]
+        // Kept as an optional experiment; the main scene now boots database crafting.
         private static void Bootstrap()
         {
             if (SceneManager.GetActiveScene().name == "SampleScene" &&
