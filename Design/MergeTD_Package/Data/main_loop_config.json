@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 2,
+  "rules": {
+    "maxDeckUnitTypes": 5,
+    "resistanceMultiplier": 0.5,
+    "personalUnitLevelsEnabled": false,
+    "synergySource": "unconfigured"
+  },
+  "monsterOverrides": [
+    {
+      "monsterId": "E01",
+      "resistElements": [
+        "물리"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E02",
+      "resistElements": [
+        "암흑"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E03",
+      "resistElements": [
+        "자연"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E04",
+      "resistElements": [
+        "냉기"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E05",
+      "resistElements": [
+        "화염"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E06",
+      "resistElements": [
+        "자연"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E07",
+      "resistElements": [
+        "자연"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E08",
+      "resistElements": [
+        "물리"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E09",
+      "resistElements": [
+        "신성"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E10",
+      "resistElements": [
+        "물리"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E11",
+      "resistElements": [
+        "번개"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E12",
+      "resistElements": [
+        "번개"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E13",
+      "resistElements": [
+        "냉기"
+      ],
+      "resistanceStatus": "draft"
+    },
+    {
+      "monsterId": "E14",
+      "resistElements": [
+        "신성"
+      ],
+      "resistanceStatus": "draft"
+    }
+  ],
+  "battleMerge": {
+    "configured": false,
+    "maxStar": 0,
+    "copiesRequired": 0,
+    "starMultipliers": []
+  },
+  "equipment": [],
+  "sharedGrowth": [],
+  "combatStats": [],
+  "skills": [],
+  "stages": [],
+  "summoning": {
+    "configured": false,
+    "cost": 0,
+    "unitWeights": []
+  },
+  "battleLimits": {
+    "configured": false,
+    "maxDeployedInstances": 0,
+    "equipmentSlotsPerUnit": 0
+  },
+  "pendingDecisions": [
+    "synergySource: deck or deployed",
+    "battleMerge: maxStar, copiesRequired, scaling",
+    "equipment definitions, merge rules and slots",
+    "summoning costs and probabilities",
+    "deployment limit",
+    "shared growth costs and effects",
+    "combat stats, skills, stages and rewards",
+    "confirm provisional monster resistances"
+  ]
+}
