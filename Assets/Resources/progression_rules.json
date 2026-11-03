@@ -1,0 +1,18 @@
+{
+  "schemaVersion":1,
+  "maxLevel":5,
+  "levelCaps":[1,2,3,4,5],
+  "secondaryPathCap":2,
+  "maxPurchasedPaths":2,
+  "initialGold":300,
+  "maxPermanentLevel":10,
+  "permanentBaseCost":80,
+  "tier2ChancePerUpgrade":0.03,
+  "tier3ChancePerUpgrade":0.01,
+  "maxStartLevelProbabilities":[0.30,0.35,0.20,0.10,0.05],
+  "initialBattleCash":350,
+  "deployCost":50,
+  "upgradeCosts":[35,60,110,180,320],
+  "totalWaves":10,
+  "balanceStatus":"playable_prototype"
+}

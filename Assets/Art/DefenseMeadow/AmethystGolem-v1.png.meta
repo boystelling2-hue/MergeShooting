@@ -1,0 +1,637 @@
+fileFormatVersion: 2
+guid: 4f9227c4d3a908d4a87fa41a749c3a7f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7490041225101356555
+    second: AmethystGolem-v1_0
+  - first:
+      213: 3884591400766982648
+    second: AmethystGolem-v1_1
+  - first:
+      213: -470845268081069566
+    second: AmethystGolem-v1_2
+  - first:
+      213: -4203113719674425652
+    second: AmethystGolem-v1_3
+  - first:
+      213: 2623395822673927897
+    second: AmethystGolem-v1_4
+  - first:
+      213: -5961952399555502503
+    second: AmethystGolem-v1_5
+  - first:
+      213: 5978150542551377597
+    second: AmethystGolem-v1_6
+  - first:
+      213: -2291362740439888249
+    second: AmethystGolem-v1_7
+  - first:
+      213: -5518133627257799138
+    second: AmethystGolem-v1_8
+  - first:
+      213: -4232677062923105075
+    second: AmethystGolem-v1_9
+  - first:
+      213: -7860655392350549725
+    second: AmethystGolem-v1_10
+  - first:
+      213: -2082326875542432426
+    second: AmethystGolem-v1_11
+  - first:
+      213: 3550072895542564339
+    second: AmethystGolem-v1_12
+  - first:
+      213: -1625797133481429031
+    second: AmethystGolem-v1_13
+  - first:
+      213: 8642229786967537180
+    second: AmethystGolem-v1_14
+  - first:
+      213: -542705361363199126
+    second: AmethystGolem-v1_15
+  - first:
+      213: -5458087084763701648
+    second: AmethystGolem-v1_16
+  - first:
+      213: -5587630805191464032
+    second: AmethystGolem-v1_17
+  - first:
+      213: 4482184151588247162
+    second: AmethystGolem-v1_18
+  - first:
+      213: -6686129663624471565
+    second: AmethystGolem-v1_19
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AmethystGolem-v1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1098
+        width: 6
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0ea23f6fc8f1f760800000000000000
+      internalID: 7490041225101356555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 0
+        width: 1246
+        height: 1214
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f9c04c2c47d8e530800000000000000
+      internalID: 3884591400766982648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_2
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 83
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 202badb29b83779f0800000000000000
+      internalID: -470845268081069566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 83
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cce2c3c475a8ba5c0800000000000000
+      internalID: -4203113719674425652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_4
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 57
+        width: 27
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9de19b3f99c286420800000000000000
+      internalID: 2623395822673927897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_5
+      rect:
+        serializedVersion: 2
+        x: 651
+        y: 85
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95ed4b061e3e24da0800000000000000
+      internalID: -5961952399555502503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_6
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 63
+        width: 87
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db6659eae38a6f250800000000000000
+      internalID: 5978150542551377597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_7
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 79
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 78ec38c4ab17330e0800000000000000
+      internalID: -2291362740439888249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_8
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 85
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e1e392cc3b6ab63b0800000000000000
+      internalID: -5518133627257799138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_9
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 63
+        width: 25
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dcc468f03a28245c0800000000000000
+      internalID: -4232677062923105075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_10
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 37
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329cf25719759e290800000000000000
+      internalID: -7860655392350549725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_11
+      rect:
+        serializedVersion: 2
+        x: 981
+        y: 61
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6555b054db61a13e0800000000000000
+      internalID: -2082326875542432426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_12
+      rect:
+        serializedVersion: 2
+        x: 1051
+        y: 59
+        width: 13
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f59e894d74644130800000000000000
+      internalID: 3550072895542564339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_13
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 54
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d7bdf5fe120079e0800000000000000
+      internalID: -1625797133481429031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_14
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 49
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c16ff77e33e5fe770800000000000000
+      internalID: 8642229786967537180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_15
+      rect:
+        serializedVersion: 2
+        x: 1037
+        y: 43
+        width: 33
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6b1f36695ce778f0800000000000000
+      internalID: -542705361363199126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_16
+      rect:
+        serializedVersion: 2
+        x: 1085
+        y: 47
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07e138fe6baf044b0800000000000000
+      internalID: -5458087084763701648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_17
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 19
+        width: 23
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ab6880236fb472b0800000000000000
+      internalID: -5587630805191464032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_18
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 33
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a769d4dfcbae33e30800000000000000
+      internalID: 4482184151588247162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AmethystGolem-v1_19
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 6
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fb167dde781633a0800000000000000
+      internalID: -6686129663624471565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      AmethystGolem-v1_0: 7490041225101356555
+      AmethystGolem-v1_1: 3884591400766982648
+      AmethystGolem-v1_10: -7860655392350549725
+      AmethystGolem-v1_11: -2082326875542432426
+      AmethystGolem-v1_12: 3550072895542564339
+      AmethystGolem-v1_13: -1625797133481429031
+      AmethystGolem-v1_14: 8642229786967537180
+      AmethystGolem-v1_15: -542705361363199126
+      AmethystGolem-v1_16: -5458087084763701648
+      AmethystGolem-v1_17: -5587630805191464032
+      AmethystGolem-v1_18: 4482184151588247162
+      AmethystGolem-v1_19: -6686129663624471565
+      AmethystGolem-v1_2: -470845268081069566
+      AmethystGolem-v1_3: -4203113719674425652
+      AmethystGolem-v1_4: 2623395822673927897
+      AmethystGolem-v1_5: -5961952399555502503
+      AmethystGolem-v1_6: 5978150542551377597
+      AmethystGolem-v1_7: -2291362740439888249
+      AmethystGolem-v1_8: -5518133627257799138
+      AmethystGolem-v1_9: -4232677062923105075
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

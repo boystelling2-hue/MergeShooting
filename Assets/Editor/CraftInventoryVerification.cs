@@ -22,7 +22,7 @@ public static class CraftInventoryVerification
             foreach(var recipe in db.GetAllCraftRecipes())
             {
                 var inv=new CraftInventory(db);
-                Check(inv.TryGrant(recipe.inputA,1,out _) && inv.TryGrant(recipe.inputB,1,out _),"grant materials");
+                Check(inv.TryGrant(recipe.inputA,1,out _,5) && inv.TryGrant(recipe.inputB,1,out _,5),"grant materials");
                 var before=inv.GetOwnedUnits();
                 Check(inv.TryCraft(before[0].instanceId,before[1].instanceId,out var result,out _),"recipe execution");
                 Check(result.unitId==recipe.resultId && inv.Count==1 && inv.GetOwnedUnits()[0].unitId==recipe.resultId,"DB result and material consumption");
@@ -41,15 +41,15 @@ public static class CraftInventoryVerification
             Check(inventory.GetOwnedUnits()[0].unitId=="U1_10000","snapshot does not expose inventory state");
 
             var store=new CraftSaveFile(temp);var persisted=new CraftInventory(db,store.Write);
-            persisted.TryGrant("U1_10000",2,out _);var pair=persisted.GetOwnedUnits();
+            persisted.TryGrant("U1_10000",2,out _,5);var pair=persisted.GetOwnedUnits();
             Check(persisted.TryCraft(pair[0].instanceId,pair[1].instanceId,out _,out _),"persistent craft");
             var restored=new CraftInventory(db);restored.Restore(store.Read());
             Check(restored.Count==1 && restored.DiscoveredCount==1 && restored.GetOwnedUnits()[0].unitId=="U2_20000","disk round trip");
-            var broken=new CraftSaveState { units=new[]{one,one},discoveredPaths=new string[0] };
+            var broken=new CraftSaveState { units=new[]{one,one},discoveredPaths=new string[0],discoveredUnitIds=new string[0] };
             bool rejected=false;try { restored.Restore(broken); } catch(InvalidDataException) { rejected=true; }
             Check(rejected && restored.Count==1 && restored.DiscoveredCount==1,"invalid load preserves state");
             var failure=new CraftInventory(db,_=>throw new IOException("simulated full disk"));
-            failure.Restore(new CraftSaveState { units=new[]{new CraftOwnedUnit("a","U1_10000"),new CraftOwnedUnit("b","U1_10000")},discoveredPaths=new string[0] });
+            failure.Restore(new CraftSaveState { units=new[]{new CraftOwnedUnit("a","U1_10000",5),new CraftOwnedUnit("b","U1_10000",5)},discoveredPaths=new string[0],discoveredUnitIds=new string[0] });
             Check(!failure.TryCraft("a","b",out _,out _) && failure.Count==2 && failure.DiscoveredCount==0,"failed save cannot consume ingredients or discover recipe");
             File.WriteAllText("Library/MainCraftingVerification.txt","PASS: all 135 DB recipes, two-copy consumption, same-copy/invalid/stale rejection, discovery, snapshot isolation, disk persistence, invalid restore rollback, failed-save rollback.");
             Debug.Log("Main crafting verification PASS: 135 recipes");
@@ -64,3 +64,4 @@ public static class CraftInventoryVerification
     }
     private static void Check(bool ok,string label) { if(!ok) throw new Exception("Crafting verification failed: "+label); }
 }
+
