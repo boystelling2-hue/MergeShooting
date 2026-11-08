@@ -12,8 +12,9 @@ public static class DefenseArtAssets
         AssetDatabase.ImportAsset(path);
         var importer=(TextureImporter)AssetImporter.GetAtPath(path);
         importer.textureType=TextureImporterType.Sprite;importer.spriteImportMode=SpriteImportMode.Single;
-        importer.spritePixelsPerUnit=100;importer.maxTextureSize=2048;importer.mipmapEnabled=false;
-        importer.alphaIsTransparency=true;importer.textureCompression=TextureImporterCompression.Uncompressed;importer.filterMode=FilterMode.Bilinear;
+        bool enemy=name=="AmberSlime-v1"||name=="CyanRunner-v1"||name=="AmethystGolem-v1";
+        importer.spritePixelsPerUnit=100;importer.maxTextureSize=enemy?512:2048;importer.mipmapEnabled=true;importer.mipMapsPreserveCoverage=false;
+        importer.alphaIsTransparency=true;importer.textureCompression=TextureImporterCompression.Uncompressed;importer.filterMode=FilterMode.Trilinear;
         importer.SaveAndReimport();return AssetDatabase.LoadAssetAtPath<Sprite>(path);
     }
     // A separate transparent road layer follows the simulation route exactly. The painted terrain is never modified.

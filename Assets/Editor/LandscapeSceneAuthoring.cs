@@ -21,7 +21,7 @@ public static class LandscapeSceneAuthoring
     }
     internal static Text Label(string name,string text,Transform parent,float x,float y,float w,float h,int size=20,TextAnchor alignment=TextAnchor.MiddleCenter)
     {
-        var go=new GameObject(name,typeof(RectTransform),typeof(Text));go.layer=5;go.transform.SetParent(parent,false);
+        var go=new GameObject(name,typeof(RectTransform),typeof(CrispText));go.layer=5;go.transform.SetParent(parent,false);
         var rt=(RectTransform)go.transform;rt.anchorMin=rt.anchorMax=new Vector2(0,1);rt.pivot=new Vector2(0,1);rt.anchoredPosition=new Vector2(x,-y);rt.sizeDelta=new Vector2(w,h);
         var t=go.GetComponent<Text>();t.font=font;t.fontSize=size;t.text=text;t.color=Light;t.alignment=alignment;t.raycastTarget=false;return t;
     }
@@ -45,7 +45,7 @@ public static class LandscapeSceneAuthoring
     {var a=so.FindProperty(name);a.arraySize=values.Count;for(int i=0;i<values.Count;i++)a.GetArrayElementAtIndex(i).objectReferenceValue=values[i];}
     internal static RectTransform Frame(GameObject root,string name)
     {
-        var c=root.GetComponent<Canvas>();c.renderMode=RenderMode.ScreenSpaceOverlay;c.enabled=true;
+        var c=root.GetComponent<Canvas>();c.renderMode=RenderMode.ScreenSpaceOverlay;c.enabled=true;c.pixelPerfect=true;
         var s=root.GetComponent<CanvasScaler>();s.uiScaleMode=CanvasScaler.ScaleMode.ScaleWithScreenSize;s.referenceResolution=new Vector2(1280,720);s.matchWidthOrHeight=1;
         var backdrop=Panel("Letterbox",root.transform,0,0,1280,720,Ink);backdrop.anchorMin=Vector2.zero;backdrop.anchorMax=Vector2.one;backdrop.offsetMin=backdrop.offsetMax=Vector2.zero;
         var frame=new GameObject(name,typeof(RectTransform)).GetComponent<RectTransform>();frame.SetParent(root.transform,false);frame.anchorMin=frame.anchorMax=frame.pivot=new Vector2(.5f,.5f);frame.sizeDelta=new Vector2(1280,720);
@@ -71,7 +71,7 @@ public static class LandscapeSceneAuthoring
         var recipes=Button("Recipes","제작법",frame,532,88,106,40,18);
         var permanent=Button("Permanent Upgrades","영구 강화",frame,650,88,126,40,18);
         var grid=Panel("Merge Board",frame,28,144,748,500,new Color(.075f,.105f,.12f));
-        var slots=new List<CraftUnitView>();var sprites=new List<Sprite>();for(int i=0;i<5;i++)sprites.Add(AssetDatabase.LoadAssetAtPath<Sprite>("Assets/UI/Workshop/Role"+i+".png"));
+        var slots=new List<CraftUnitView>();var sprites=new List<Sprite>();for(int i=0;i<5;i++)sprites.Add(HighResolutionRoleIcons.Load(i));
         var baseUnits=db.GetAllUnits().Where(u=>u.tier==1).ToArray();
         for(int i=0;i<25;i++){
             var rt=Panel("Unit Slot "+(i+1).ToString("00"),grid,12+i%5*146,12+i/5*96,136,86,new Color(.13f,.18f,.20f));
@@ -114,7 +114,7 @@ public static class LandscapeSceneAuthoring
         var battle=BuildBattle(db);Bind(bind,"battleScreen",battle);bind.ApplyModifiedPropertiesWithoutUndo();
         if(UnityEngine.Object.FindFirstObjectByType<EventSystem>()==null){var events=new GameObject("UI EventSystem",typeof(EventSystem),typeof(InputSystemUIInputModule));events.GetComponent<InputSystemUIInputModule>().AssignDefaultActions();Undo.RegisterCreatedObjectUndo(events,"UI input");}
         PlayerSettings.defaultInterfaceOrientation=UIOrientation.LandscapeLeft;PlayerSettings.allowedAutorotateToPortrait=false;PlayerSettings.allowedAutorotateToPortraitUpsideDown=false;PlayerSettings.allowedAutorotateToLandscapeLeft=true;PlayerSettings.allowedAutorotateToLandscapeRight=true;
-        PlayerSettings.defaultScreenWidth=1280;PlayerSettings.defaultScreenHeight=720;PlayerSettings.defaultIsNativeResolution=false;PlayerSettings.defaultWebScreenWidth=1280;PlayerSettings.defaultWebScreenHeight=720;
+        PlayerSettings.defaultScreenWidth=1920;PlayerSettings.defaultScreenHeight=1080;PlayerSettings.defaultIsNativeResolution=true;PlayerSettings.defaultWebScreenWidth=1920;PlayerSettings.defaultWebScreenHeight=1080;
         EditorSceneManager.MarkSceneDirty(scene);EditorSceneManager.SaveScene(scene);AssetDatabase.SaveAssets();Selection.activeGameObject=main.gameObject;
         if(AssetDatabase.LoadAssetAtPath<Texture2D>(WorkshopSkinAuthoring.AtlasPath)!=null)WorkshopSkinAuthoring.Apply();
         Debug.Log("Landscape scene saved: 1280x720 workshop + battle.");
